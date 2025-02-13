@@ -16,11 +16,11 @@ open class SUDateFormatter {
     }
 
     public init() { }
-
-   public static func getDateString(date: Date, format: DateFormatterStyle) -> String {
+    
+    public static func getDateString(date: Date, format: DateFormatterStyle) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format.rawValue
-
+        
         let dateString = dateFormatter.string(from: date)
         return dateString
     }
